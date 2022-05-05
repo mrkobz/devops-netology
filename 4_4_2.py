@@ -1,5 +1,7 @@
 import os
-path = os.path.abspath
+import sys
+
+path = sys.argv[1]
 bash_command = [f'cd {path}', "git status"]
 result_os = os.popen(' && '.join(bash_command)).read()
 for result in result_os.split('\n'):
