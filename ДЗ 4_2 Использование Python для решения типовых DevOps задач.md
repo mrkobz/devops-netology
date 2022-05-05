@@ -41,7 +41,7 @@ for result in result_os.split('\n'):
 
 import os
 
-bash_command = ["C:\Users\kobzev_iv\PycharmProjects\devops-netology", "git status"]
+bash_command = ["cd C:\\Users\\kobzev_iv\\PycharmProjects\\devops-netology", "git status"]
 result_os = os.popen(' && '.join(bash_command)).read()
 is_change = False # не используется, непонятно зачем нужна. можно удалить эту строку
 for result in result_os.split('\n'):
