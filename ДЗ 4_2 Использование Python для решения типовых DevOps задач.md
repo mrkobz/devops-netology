@@ -53,6 +53,7 @@ for result in result_os.split('\n'):
 
 ### Вывод скрипта при запуске при тестировании:
 ```
+
 C:\Users\kobzev_iv\PycharmProjects\terraform\venv\Scripts\python.exe C:/Users/kobzev_iv/PycharmProjects/devops-netology/4_1_1.py
 test.py
 
