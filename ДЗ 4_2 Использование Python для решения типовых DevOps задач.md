@@ -89,12 +89,32 @@ test.py
 
 ### Ваш скрипт:
 ```python
-???
+import socket
+import json
+
+log_old_address = open('address.log', 'r')
+old_address = json.loads(log_old_address.read())
+dns_hosts = ["drive.google.com", "mail.google.com", "google.com"]
+ip_hosts = []
+for resolve in dns_hosts:
+    ip_hosts.append(socket.gethostbyname(resolve))
+real_address = dict(zip(dns_hosts, ip_hosts))
+log_address = open('address.log', 'w')
+log_address.write(json.dumps(real_address))
+log_address.close()
+for item in real_address:
+    if (real_address[item] == old_address[item]):
+        print(item ,'-', real_address[item])
+    else:
+        print('[Error]',item,'','ip mismatch:', old_address[item],'', real_address[item])
 ```
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-???
+C:\Users\kobzev_iv\PycharmProjects\terraform\venv\Scripts\python.exe C:/Users/kobzev_iv/PycharmProjects/devops-netology/4_1_3.py
+[Error] drive.google.com  ip mismatch: 64.233.165.194  142.251.1.194
+[Error] mail.google.com  ip mismatch: 74.5.131.18  74.125.131.19
+google.com - 64.233.162.113
 ```
 
 ## Дополнительное задание (со звездочкой*) - необязательно к выполнению
