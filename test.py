@@ -1,5 +1,6 @@
 import os
 import sys
 
-path = sys.argv[0]
-print(path)
+path = sys.argv[1]
+testr='sdfsdfsdf'
+print(path+testr)

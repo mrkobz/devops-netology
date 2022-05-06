@@ -64,12 +64,24 @@ Process finished with exit code 0
 
 ### Ваш скрипт:
 ```python
-???
+import os
+import sys
+
+path = sys.argv[0]
+path = path.replace('/', '\\')
+bash_command = ["git status", "cd " + path]
+result_os = os.popen(' && '.join(bash_command)).read()
+for result in result_os.split('\n'):
+    if result.find('modified') != -1:
+        prepare_result = result.replace('\tmodified:   ', '')
+        print(prepare_result)
 ```
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-???
+C:\Users\kobzev_iv\PycharmProjects\terraform\venv\Scripts\python.exe C:/Users/kobzev_iv/PycharmProjects/devops-netology/4_4_2.py
+4_4_2.py
+test.py
 ```
 
 ## Обязательная задача 4
