@@ -64,23 +64,23 @@ for item in real_address:
 
 ### Вывод скрипта при запуске при тестировании:
 ```
-[Error] drive.google.com  ip mismatch: 64.233.163.194  173.194.222.194
-[Error] mail.google.com  ip mismatch: 142.251.1.18  74.125.131.19
-[Error] google.com  ip mismatch: 64.233.162.100  64.233.164.100
+C:\Users\kobzev_iv\PycharmProjects\terraform\venv\Scripts\python.exe C:/Users/kobzev_iv/PycharmProjects/devops-netology/4_3_2.py
+[Error] drive.google.com  ip mismatch: 64.233.16.194  64.233.162.194
+mail.google.com - 64.233.165.83
+google.com - 173.194.222.138
 
-Process finished with exit code 0
 ```
 
 ### json-файл(ы), который(е) записал ваш скрипт:
 ```json
-{"drive.google.com": "173.194.222.194"}{"mail.google.com": "74.125.131.19"}{"google.com": "64.233.164.100"}
+{"drive.google.com": "64.233.162.194"}{"mail.google.com": "64.233.165.83"}{"google.com": "173.194.222.138"}
 ```
 
 ### yml-файл(ы), который(е) записал ваш скрипт:
 ```yaml
-drive.google.com: 173.194.222.194
-mail.google.com: 74.125.131.19
-google.com: 64.233.164.100
+drive.google.com: 64.233.162.194
+mail.google.com: 64.233.165.83
+google.com: 173.194.222.138
 ```
 
 ## Дополнительное задание (со звездочкой*) - необязательно к выполнению
