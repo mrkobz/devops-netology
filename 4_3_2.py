@@ -21,14 +21,14 @@ for item in real_address:
     if (real_address[item] == old_address[item]):
         print(item ,'-', real_address[item])
         wr1 = {item:real_address[item]}
-        with open('json_file.json','a') as json:
-            json.write(json.dumps(wr1))
-        with open('yaml_file.yml','a') as yaml:
-            yaml.write(yaml.dump(wr1))
+        with open('json_file.json','a') as jsn:
+            jsn.write(json.dumps(wr1))
+        with open('yaml_file.yml','a') as yml:
+            yml.write(yaml.dump(wr1))
     else:
         print('[Error]',item,'','ip mismatch:', old_address[item],'', real_address[item])
         wr2 = {item:real_address[item]}
-        with open('json_file.json','a') as json:
-            json.write(json.dumps(wr2))
-        with open('yaml_file.yml','a') as yaml:
-            yaml.write(yaml.dump(wr2))
+        with open('json_file.json','a') as jsn:
+            jsn.write(json.dumps(wr2))
+        with open('yaml_file.yml','a') as yml:
+            yml.write(yaml.dump(wr2))
