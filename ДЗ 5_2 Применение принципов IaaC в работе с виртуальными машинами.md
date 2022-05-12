@@ -28,24 +28,15 @@ Ansible
 
 Ответ 3
 ansible:
-root@debian11-tst:~# ansible --version
 
-ansible [core 2.12.5]
-  config file = None
-  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share                                                                                                                                                             /ansible/plugins/modules']
-  ansible python module location = /usr/local/lib/python3.9/dist-packages/ansibl                                                                                                                                                             e
-  ansible collection location = /root/.ansible/collections:/usr/share/ansible/co                                                                                                                                                             llections
-  executable location = /usr/local/bin/ansible
-  python version = 3.9.2 (default, Feb 28 2021, 17:03:44) [GCC 10.2.1 20210110]
-  jinja version = 3.1.2
-  libyaml = True
+![img_3.png](img_3.png)
 
 vagrant:
-root@debian11-tst:~# vagrant -v
 
-Vagrant 2.2.19
+![img_2.png](img_2.png)
 
 virtualbox:
+
 ![img_1.png](img_1.png)
 
 
